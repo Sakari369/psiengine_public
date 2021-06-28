@@ -98,37 +98,39 @@ Clone the repository, run:
 
 `git submodule update --init --recursive`
 
-To pull in the freetype-gl headers.
+To pull in the psiengine core and required submodules.
 
-Change directory under 'PsiENGINE/engine/core'
+Change directory under 'engine/core'
 Then compile the core engine library:
 
 ```bash
 mkdir build && cd build
 conan install ../
-cmake -G Ninja ../ (or cmake -g "Unix Makefiles" ../)
-ninja (or make)
+cmake -G Ninja ../
+ninja
 ```
+
+(You can also use 'cmake -g "Unix Makefiles"' and make, if you dont have Ninja installed.)
 
 This will build the core library under build/lib.
 
-Now you can build the actual engine binary. Change back to directory 'PsiENGINE/engine', and run:
+Now you can build the actual engine binary. Change back to directory 'engine', and run:
 
 ```bash
 mkdir build && cd build
 conan install ../
-cmake -G Ninja ../ (or cmake -g "Unix Makefiles" ../)
-ninja (or make)
+cmake -G Ninja ../
+ninja
 ```
 
 Now you should have the engine binary under 'build/bin/psiengine'.
-You can now run this from the build 'PsiENGINE/engine/build' directory (script assets are loaded relative to the binary path currently):
+You can now run this from the build directory (script assets are loaded relative to the binary path currently):
 
 ```
-build/bin/psiengine hypercube
+bin/psiengine hypercube
 ```
 
-This will then start the engine and load the application logic from the provided 'engine/assets/scripts/hypercube.lua' script.
+This will start the engine and load the application logic from the provided 'engine/assets/scripts/hypercube.lua' script.
 
 Screenshots
 ====================
