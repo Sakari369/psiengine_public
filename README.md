@@ -21,9 +21,11 @@ This is more of a toy engine, as I have no interest in trying to optimize the pe
 Motivation behind writing a 3D engine
 =====================================
 
-Wrote this engine to understand how 3D and 3D engines work and to target specifically rendering this kind of recursive geometry in an efficient way (click on image to open video): 
+Wrote this engine to understand how 3D and 3D engines work and to target specifically rendering this kind of recursive geometry in an efficient way:
 
 [![Geometry shader circle polylines](http://img.youtube.com/vi/SDGj6vSqS5Y/0.jpg)](http://www.youtube.com/watch?v=SDGj6vSqS5Y" "Geometry shader circle polylines")
+
+(click on image to open video) 
 
 Currently I use this engine to toy around, as the Lua scripting environment that I've setup for this project is very nice and performant to use, and it's nice to be more close to the metal when doing for example demo-coding or creating some cool effects.
 
@@ -45,9 +47,11 @@ Our demo placed first place in the compo, which I am happy about :) This demo sh
 
 You can download the demo for macOS here: http://www.pouet.net/prod.php?which=69986
 
-We also had a Geometrify demo with Oculus Rift DK2 support pretty far, but ultimately we could not create this application without tooling back in 2015. You can see a video of how far we got with the DK2 demo here (click on image to open video):
+We also had a Geometrify demo with Oculus Rift DK2 support pretty far, but ultimately we could not create this application without tooling back in 2015. You can see a video of how far we got with the DK2 demo here:
 
 [![Geometrify DK2 demo](http://img.youtube.com/vi/k7-zH0YaEBs/0.jpg)](http://www.youtube.com/watch?v=k7-zH0YaEBs "Geometrify DK2 demo")
+
+(click on image to open video) 
 
 Now we have OmniGeometry for creating the scenes (http://www.omnigeometry.com) and I have been since implementing the same idea utilizing Godot -game engine and now latest one with Unity, but still this vision has not been finished. Work continues :)
 
@@ -98,7 +102,7 @@ Clone the repository, run:
 
 `git submodule update --init --recursive`
 
-To pull in the psiengine core and required submodules.
+To pull in the engine core and required submodules.
 
 Change to directory 'engine', and run:
 
