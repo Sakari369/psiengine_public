@@ -100,8 +100,7 @@ Clone the repository, run:
 
 To pull in the psiengine core and required submodules.
 
-Change directory under 'engine/core'
-Then compile the core engine library:
+Change to directory 'engine', and run:
 
 ```bash
 mkdir build && cd build
@@ -111,17 +110,6 @@ ninja
 ```
 
 (You can also use 'cmake -g "Unix Makefiles"' and make, if you dont have Ninja installed.)
-
-This will build the core library under build/lib.
-
-Now you can build the actual engine binary. Change back to directory 'engine', and run:
-
-```bash
-mkdir build && cd build
-conan install ../
-cmake -G Ninja ../
-ninja
-```
 
 Now you should have the engine binary under 'build/bin/psiengine'.
 You can now run this from the build directory (script assets are loaded relative to the binary path currently):
