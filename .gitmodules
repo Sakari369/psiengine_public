@@ -1,0 +1,3 @@
+[submodule "engine/core"]
+	path = engine/core
+	url = git@github.com:Sakari369/psiengine_core.git
